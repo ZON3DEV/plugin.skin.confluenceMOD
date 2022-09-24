@@ -1,0 +1,1 @@
+# plugin.skin.confluenceMOD
