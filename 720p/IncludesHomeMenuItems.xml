@@ -54,8 +54,8 @@
 		</control>
 		<control type="button" id="90162">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>Adult Content</label>
-			<onclick>PlayMedia(C:\Users\YggDraz1l\AppData\Roaming\Kodi\userdata\playlists\video\Adult.pls)</onclick>
+			<label>AGT 13</label>
+			<onclick>PlayMedia(http://192.168.178.55/adult.m3u)</onclick>
 			<visible>!Skin.HasSetting(HomeMenuNoSoftcoreButton)</visible>
 		</control>
 		<control type="button" id="90163">
@@ -154,33 +154,33 @@
 		</control>
 		<control type="button" id="90113">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>$INFO[Container(90110).ListItemNoWrap(1).Label]</label>
-			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(1).FileNameAndPath],return)</onclick>
-			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(1).Label)</visible>
+			<label>$INFO[Container(90110).ListItemNoWrap(2).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
+			<visible>True</visible>
 		</control>
 		<control type="button" id="90114">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>$INFO[Container(90110).ListItemNoWrap(2).Label]</label>
-			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
-			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(2).Label)</visible>
+			<label>Radio FSN: HateCore</label>
+			<onclick>PlayMedia(http://stream.radio-fsn.de:8000/hardcore.m3u)</onclick>
+			<visible>true</visible>
 		</control>
 		<control type="button" id="90115">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>$INFO[Container(90110).ListItemNoWrap(3).Label]</label>
-			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(3).FileNameAndPath],return)</onclick>
-			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(3).Label)</visible>
+			<label>Radio FSN: Balladen</label>
+			<onclick>PlayMedia(http://stream.radio-fsn.de:8000/balladen.m3u)</onclick>
+			<visible>true</visible>
 		</control>
-		<control type="button" id="90116">
+		<control type="button" id="90616">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>$INFO[Container(90110).ListItemNoWrap(4).Label]</label>
-			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(4).FileNameAndPath],return)</onclick>
-			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(4).Label)</visible>
+			<label>Radio FSN: Rock</label>
+			<onclick>PlayMedia(http://stream.radio-fsn.de:8000/rock.m3u)</onclick>
+			<visible>true</visible>
 		</control>
-		<control type="button" id="90117">
+		<control type="button" id="90617">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>$INFO[Container(90110).ListItemNoWrap(5).Label]</label>
-			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(5).FileNameAndPath],return)</onclick>
-			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(5).Label)</visible>
+			<label>NSM88 Radio</label>
+			<onclick>PlayMedia(http://192.168.178.55/radio.m3u)</onclick>
+			<visible>true</visible>
 		</control>
 		<control type="image" id="90119">
 			<width>35</width>
@@ -196,8 +196,8 @@
 		</control>
 		<control type="button" id="90122">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>5</label>
-			<onclick>ActivateWindow(Settings)</onclick>
+			<label>Skin Einstellungen</label>
+			<onclick>ActivateWindow(SkinSettings)</onclick>
 		</control>
 		<control type="button" id="90120">
 			<include>ButtonHomeSubCommonValues</include>
@@ -207,9 +207,8 @@
 		</control>
 		<control type="button" id="90400">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>CoreELEC</label>
-			<onclick>RunAddon(service.coreelec.settings)</onclick>
-			<visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
+			<label>Skin Reload</label>
+			<onclick>ReloadSkin()</onclick>
 		</control>
 		<control type="button" id="90123">
 			<include>ButtonHomeSubCommonValues</include>
@@ -223,7 +222,7 @@
 		</control>
 		<control type="button" id="90125">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>130</label>
+			<label>System Info</label>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
 		</control>
 		<control type="button" id="90126">
